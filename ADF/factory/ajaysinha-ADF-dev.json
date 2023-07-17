@@ -1,0 +1,9 @@
+{
+	"name": "ajaysinha-ADF-dev",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0d2f3eb1-db3f-479a-834f-4f4e73c9cd9c",
+		"tenantId": "89f7f97e-1edf-43a9-8d58-c87b5345d0d9"
+	}
+}

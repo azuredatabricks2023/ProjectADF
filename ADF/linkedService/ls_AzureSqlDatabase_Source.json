@@ -1,0 +1,19 @@
+{
+	"name": "ls_AzureSqlDatabase_Source",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=ajaysinhasourceserver.database.windows.net;Initial Catalog=sqladminsource;User ID=sqladmin",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_AzureKeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sqladminsource-pwd-KV"
+			}
+		}
+	}
+}
