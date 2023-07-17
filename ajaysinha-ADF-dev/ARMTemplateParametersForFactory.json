@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ajaysinha-ADF-dev"
+		},
+		"ls_AzureSqlDatabase_Source_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=ajaysinhasourceserver.database.windows.net;Initial Catalog=sqladminsource;User ID=sqladmin"
+		},
+		"ls_AzureDataLakeStorage_Sink_properties_typeProperties_url": {
+			"value": "https://sinkgenstorageproject.dfs.core.windows.net"
+		},
+		"ls_AzureDataLakeStorage_Sink_properties_typeProperties_tenant": {
+			"value": "89f7f97e-1edf-43a9-8d58-c87b5345d0d9"
+		},
+		"ls_AzureDataLakeStorage_Sink_properties_typeProperties_servicePrincipalId": {
+			"value": "49c523c4-9fe9-4204-bd8a-63db10adafda"
+		},
+		"ls_AzureDataLakeStorage_Source_properties_typeProperties_url": {
+			"value": "https://sourcegenstorageproject.dfs.core.windows.net"
+		},
+		"ls_AzureDataLakeStorage_Source_properties_typeProperties_tenant": {
+			"value": "89f7f97e-1edf-43a9-8d58-c87b5345d0d9"
+		},
+		"ls_AzureDataLakeStorage_Source_properties_typeProperties_servicePrincipalId": {
+			"value": "49c523c4-9fe9-4204-bd8a-63db10adafda"
+		},
+		"ls_AzureKeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://ajaysinha-key-vault-dev.vault.azure.net/"
+		},
+		"ls_RestService_Source_properties_typeProperties_url": {
+			"value": "https://airlabs.co/api/v9/airlines"
+		}
+	}
+}
